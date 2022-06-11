@@ -1,33 +1,124 @@
+body{
+    background-color: rgba(153, 218, 243, 0.507);
+} 
 .container
 {
 display: flex;
+ 
+    width:500px;
+    height:500px;
+    margin:0 auto;
+  
+    position:absolute;
+    left:50%;
+    top:50%;
+     margin-left:-250px; 
+    margin-top:-200px; 
+} 
 
+#welcome
+{
+    position:absolute;
+    left:44%;
+    top:0;
+    color: white;
+    font-family: Courier New ;
+    letter-spacing: 10px;
+}
+
+#below-welcome
+{
+    position:absolute;
+    left:40%;
+    top:5%;
+    color: white;
+    font-family: Courier New ;
+    letter-spacing: 10px;
+}
+.right-grid
+{margin-left:80px;
+}
+ 
+.score-grid
+{background-color:rgb(241, 238, 238);
+margin-top: 10px;
+height:300px;width:200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:7px;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19) inset;
+  
+ }
+#score-text
+{position: relative;
+margin-top: -80px;
+color: rgb(163, 168, 168);
+font-family: Papyrus;
+font-size: 10px;
+}
+#score
+{position: relative;
+    font-size: 50px;
+    color: rgb(163, 168, 168);
+    margin-top: 8px;
+    margin-left:-10px;
+    font-family: Lucida Console;
+}
+
+#start-button
+{margin-left:10px;
+margin-top: 5px;
+background-color: crimson;
+padding-left:15px;
+font-family: Garamond;
+font-size: 13px;
+padding-right: 15px;
+color: floralwhite;
+border-radius: 5px;
+border-color: crimson;
+width: 130px;
+box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19) ;
+}
+#start-button-div
+{ margin-top: 20px;
+  margin-left: 30px;
+  background-color: greenyellow;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 2px rgba(0, 0, 0, 0.19) ;
+  height: 30px;
+  width: 150px;
 }
 
 .main-grid
 {
-    background-color:yellow;
     height: 400px;
     width:200px;
     display:flex;
     flex-wrap: wrap;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 2px 2px 2px 2px rgba(0, 0, 0, 0.19) inset;
+    margin:40px 0px 0px 10px;
+    
 }
 .main-grid div
 {
     height: 20px;
     width:20px;
+    
+    
 }
 .tetrimino
 {
     background-color: red;
 }
  .mini-grid
- {  margin-left: 20px;
-    background-color:yellow;
+ {  
+    background-color:background-color:rgb(241, 238, 238);
     height: 80px;
     width : 80px;
     display  : flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;position: relative;
+    margin-top: -20px;
 }
  .mini-grid div
  {
